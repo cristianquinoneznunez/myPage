@@ -81,8 +81,13 @@ main p {
 main h1 {
 	text-align: center;
 }
+main h2 {
+	padding-top: 2%;
+	text-align: center;
+}
 main h3 {
 	padding-top: 2%;
+	text-align: center;
 }
 
 main ul {
@@ -140,7 +145,7 @@ footer a{
 		color: #000;
 	}
 	
-
+}
 	
 	/* Media Query for Large Desktop Viewports */
 @media screen and (min-width: 1921px), print {
@@ -157,6 +162,7 @@ footer a{
 	main {
 		background-color: #F7CACC;
 	}
+}
 	
 	/* Media Query for Desktop Viewport */
 @media screen and (min-width: 1000px),print {
@@ -181,3 +187,4 @@ footer a{
 	nav li a:hover {
 		
 	}
+}
