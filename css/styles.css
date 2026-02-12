@@ -142,6 +142,10 @@ footer a{
 }
 
 /* Tablet Viewport: Style rules for nav area */
+	nav {
+	background-color: #fff;
+	border-bottom: 1px solid black;
+}
 	nav li {
 		border-top: none;
 		display: inline-block;
@@ -186,12 +190,17 @@ footer a{
 		display: none;
 	}
 
+	nav {
+	background-color: #fff;
+	border-bottom: 1px solid black;
+}
+
 	nav li {
 		font-size: 1.5em;
 	}
 
 	nav li a {
-		padding: 0.5em 0.5em;
+		padding: 0.5em 2em;
 	}
 
 	nav li a:hover {
