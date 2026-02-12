@@ -98,6 +98,7 @@ main ul {
 main a {
 	text-decoration: none;
 	font-style: italic;
+
 }
 main a:hover {
 		color: #036d2f;
@@ -194,6 +195,6 @@ footer a{
 	}
 
 	nav li a:hover {
-		
+		color: #036d2f; 
 	}
 }
