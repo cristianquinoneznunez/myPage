@@ -43,7 +43,8 @@ img{
 
 /* Style rules for navigation area */
 nav {
-	background-color: #F7CACC;
+	background-color: #fff;
+	border-bottom: 1px solid black;
 }
 
 nav ul {
@@ -53,7 +54,7 @@ nav ul {
 
 
 nav li{
-	display: block;
+	display: inline;
 	font-size: 1.25em;
 	font-family: Geneva, Arial, sans-serif;
 	font-weight: bold;
@@ -69,7 +70,7 @@ nav li a {
 
 /* Style rules for main content */
 main{
-	padding: 2%;
+	padding: 2em;
 	font-family: Arial, serif;
 }
 
@@ -94,6 +95,14 @@ main ul {
 	list-style: square;
 }
 
+main a {
+	text-decoration: none;
+	font-style: italic;
+}
+main a:hover {
+		color: #036d2f;
+		opacity: 0.5;
+	}
 /* Style rules for footer content */
 footer {
 	font-size: 0.85em;
@@ -140,7 +149,7 @@ footer a{
 	}
 
 	nav li a {
-		padding: 0.5em;
+		padding: 0.5em 2em;
 		text-decoration: underline;
 		color: #000;
 	}
@@ -181,7 +190,7 @@ footer a{
 	}
 
 	nav li a {
-		padding: 0.5em 1.5em;
+		padding: 0.5em 0.5em;
 	}
 
 	nav li a:hover {

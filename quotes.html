@@ -6,11 +6,26 @@
  -->
  <html lang="en">
  <head>
-	<title>Home Page</title>
+	<title>Quotes Page</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/styles.css">
+    <script> //my quotes array
+        var quotes = ["I love deadlines. I love the whooshing noise they make as they go by. -Douglas Adams",
+		  "Instant gratification takes too long. -Carrie Fisher",
+		  "If I'm not back in five minutes, just wait longer. -Ace Ventura",
+		  "I'm gonna come at you like a spider monkey. — Talladega Nights",
+		  "Life is like a box of chocolates. — Forrest Gump"
+		  ]
+    </script>
+    <script> // url array
+        var urlArray = [
+			"Youtube.com",
+		    "Google.com",
+			"Amazon.com"
+			]
+        
+    </script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">   
     <link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
@@ -53,19 +68,28 @@
 			<main>
 			
 				<div>
-				<h1>Home Page</h1>
-				<br>
-				<script>
-					let userName = prompt("What is your name?");
-					alert("Hi " + userName + ", welcome to my page!");
-					document.write("<h3>Hello " + userName + "!</h3>");
-				</script>
-				<br>
-				<p>A year ago I decided I wanted a better life, so I decided to go back to college for Web Development. I opted for a certification instead of a traditional degree. I did this so I can start working in the field as soon as possible.</p>
-				<p>With coding there is so many languages to learn and I intend to find the ones I enjoy and master them. By the time it's all done I'll have a diverse arsenal of codes at my disposal.
-				</p>
-				<p>I also plan on buying a new computer, <a href="https://www.bestbuy.com/product/lenovo-yoga-7-2-in-1-copilot-pc-16-full-hd-lcd-touchscreen-laptop-amd-ryzen-ai-7-350-2025-16gb-memory-1tb-ssd-seashell/JJGSH23G6F/sku/6615767" target="_blank">click here</a> if you want to see it.
-				</p>
+				<h1>Quotes Page</h1>
+                    <script>
+                        number = prompt("Enter a number");
+                        remainder = number % 5;
+                        document.write("<p>" + quotes[remainder] + "</p>");
+                    
+                        document.write("<p>" + "<a href='https://" + urlArray[0] + "'>" + urlArray[0] + "  " + "</a>" + "<a href='https://" + urlArray[1] + "'>" + urlArray[1]+ "  "+ "</a>" + "<a href='https://" + urlArray[2] + "'>" + urlArray[2] + "  " + "</a></p>");
+
+                        // get users fav website
+                        favSite = prompt("Enter url for your favorite website.");
+                        //add users a fav site to end of array
+                        urlArray[urlArray.length] = favSite;
+
+                        // delete first item in array
+                        urlArray.shift();
+
+                        //print new array
+                        document.write("<p>" + "<a href='https://" + urlArray[0] + "'>" + urlArray[0] + " " + "</a>" + "<a href='https://" + urlArray[1] + "'>" + urlArray[1]+ " "+ "</a>" + "<a href='https://" + urlArray[2] + "'>" + urlArray[2] + "</a></p>");
+                        
+
+                        
+                    </script>
 				</div>
 				
 			</main>
@@ -81,5 +105,4 @@
 
 
 	</body>
-				
 </html>	
