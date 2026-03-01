@@ -1,17 +1,17 @@
 // set up question and matching answer arrays
-var quest = ['What color is a banana?',
-                 'What color is the sky?', 
-                 'what color is a stop sign?'];
-var answers = ['yellow',
-                 'blue', 
-                 'red'];
+var quest = ["What color is a banana?",
+                 "What color is the sky?", 
+                 "What color is a stop sign?"];
+var answers = ["yellow",
+                 "blue", 
+                 "red"];
 
 // math quiz function displays math questions and gives the user 2 attempts to get it right - then returns a score
 function Quiz() {
   // initialize points
   var points = 0;
   //use a for loop to loop through each math question
-  for (i = 0; i <= 3; i++) {
+  for (i = 0; i < quest.length; i++) {
     //set attempts to 3
     var attempts = 3;
     // use a while loop to give the user 3 attempts to answer
