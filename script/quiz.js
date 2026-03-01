@@ -2,7 +2,7 @@
 var quest = ['What color is a banana?',
                  'What color is the sky?', 
                  'what color is a stop sign?'];
-var ans = ['yellow',
+var answers = ['yellow',
                  'blue', 
                  'red'];
 
