@@ -1,8 +1,8 @@
 // set up question and matching answer arrays
-var mathQuest = ['What color is a banana?',
+var quest = ['What color is a banana?',
                  'What color is the sky?', 
                  'what color is a stop sign?'];
-var mathAns = ['yellow',
+var ans = ['yellow',
                  'blue', 
                  'red'];
 
@@ -17,9 +17,9 @@ function Quiz() {
     // use a while loop to give the user 3 attempts to answer
     while (attempts > 0) {
       // prompt user with math question
-      ans = prompt("What is " + mathQuest[i]);
+      ans = prompt("What is " + quest[i]);
       // see if the answer matches the answer array
-      if (ans == mathAns[i]) {
+      if (ans == ans[i]) {
         // if correct, add 1 to points, alert user and set attempts to 0
         points = points + attempts;
         alert("Correct!");
