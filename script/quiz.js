@@ -19,7 +19,7 @@ function Quiz() {
       // prompt user with math question
       ans = prompt("What is " + quest[i]);
       // see if the answer matches the answer array
-      if (ans == ans[i]) {
+      if (ans == answers[i]) {
         // if correct, add 1 to points, alert user and set attempts to 0
         points = points + attempts;
         alert("Correct!");
