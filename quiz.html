@@ -60,8 +60,12 @@
 				<div>
 				<h1>Quiz Page</h1>
 				<br>
-                <button style=" margin: 0 auto;
-  width: 100px;" onclick="var score = Quiz(); document.write('Your score is ' + score);">Start Quiz</button>
+                
+                <script>
+					<button onclick="var score = Quiz();">Start Quiz</button>
+                // display the results on the screen
+                document.write('Your score is ' + score);
+                </script>
 				</div>
 				
 			</main>
