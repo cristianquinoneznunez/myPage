@@ -2,15 +2,15 @@
  <!--
 	Student Name: Cristian Quinonez Nunez
 	File Name: index.html
-	Date: 02/20/2026
+	Date: 02/08/2026
  -->
  <html lang="en">
  <head>
-	<title>Secret Number Game Page</title>
+	<title>Trivia Page</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+	<script src="script/trivia.js"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">   
     <link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
@@ -24,6 +24,7 @@
 			
 			<!-- Use the header area for the website name or logo -->
 			<header>
+                
 				<div class="tab-desk">
 					<a href="C:/Users/cquin/Desktop/BeginningWebDesign/index.html"><img src="images/hero_image.jpeg" alt="red glowing keyboard" height="350" class="round"></a>
 				
@@ -39,8 +40,8 @@
 					<li><a href="index.html">Home</a></li>
                     <li><a href="quotes.html">Quotes</a></li> 
                     <li><a href="secret-number-game.html">Secret Number Game</a></li> 
-                    <li><a href="quiz.html">Quiz</a></li>
-					<li><a href="trivia.html">Trivia</a></li> 
+                    <li><a href="quiz.html">Quiz</a></li> 
+                    <li><a href="trivia.html">Trivia</a></li>
                 </ul>
 			</nav>
 
@@ -50,8 +51,8 @@
 					<li><a href="index.html">Home</a></li>
                     <li><a href="quotes.html">Quotes</a></li> 
                     <li><a href="secret-number-game.html">Secret Number Game</a></li> 
-                    <li><a href="quiz.html">Quiz</a></li> 
-					<li><a href="trivia.html">Trivia</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="trivia.html">Trivia</a></li>
 				</ul>
 			</nav>
 			
@@ -59,35 +60,25 @@
 			<main>
 			
 				<div>
-				    <h1>Secret Number Game</h1>
-                    <script>
-                        var secretNumber = 2;
-                        var score = 0;
-                        var guess = prompt("Try to guess the secret number from 0-9.\nYou have three attempts.\nWhat's your guess?");
-                        guess = parseInt(guess);
-                        while(isNaN(guess)) // checks user input to see if it is an integer
-                        {
-                            guess = prompt("That's not a number! Try again:");
-                            guess = parseInt(guess);   
-                        }
-                        attempts = 3 // counter for loop
-                        while(guess != secretNumber && attempts > 1) // if user's guess is incorrect and has remaining attempts loop will run, if user's guess is correct this loop will not run
-                        {  
-                            attempts--;
-                            guess = prompt("You have " + attempts + " attempts left." + "Try again!")
-                            guess = parseInt(guess);         
-                        }
-                            if(guess == secretNumber) // compare user's guess to secret number 
-                            {
-                                score += 10; // adds to users score
-                                document.write("<h2>You guessed the secret number!</h2><p>You get " + score + " points! You win!</p>"); // displays if user's guess is correct
-                            }
-                            else
-                            {
-                                    document.write("<h2>You ran out of attempts!</h2><p>You get " + score + " points! You lose!</h2>"); // displays if user runs out of attempts 
-                            }
-                    </script>
-				
+				<h1>Trivia Page</h1>
+				<br>
+                <script>
+                var dateTime = displayDate();
+                </script>
+                <script>
+                    var greet = greeting();
+                </script>
+                <script>
+                    var emailVal = emailValidation();
+                </script>
+                <script>
+                    var quote = quoteOfTheDay();
+                </script>
+                <script>
+				var score = Quiz();
+                // display the results on the screen
+                //document.write('Your score is ' + score);
+                </script>
 				</div>
 				
 			</main>
@@ -103,5 +94,4 @@
 
 
 	</body>
-    
 </html>	
