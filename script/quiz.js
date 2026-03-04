@@ -17,7 +17,7 @@ function Quiz() {
     // use a while loop to give the user 3 attempts to answer
     while (attempts > 0) {
       // prompt user with math question
-      ans = prompt("What is " + quest[i]);
+      ans = prompt(quest[i]);
       // see if the answer matches the answer array
       if (ans == answer[i]) {
         // if correct, add 1 to points, alert user and set attempts to 0
