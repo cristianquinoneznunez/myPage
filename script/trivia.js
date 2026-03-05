@@ -71,19 +71,23 @@ function greeting() {
   }
 }
 function emailValidation() {
-  var email = prompt("Please enter your email address:");
+  
   var emailPattern = /[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}/;
-
+  while (true) {
+    var email = prompt("Please enter your email address:");
   if (emailPattern.test(email)) {
     alert("Email is valid!");
+    break;
   } else {
     alert("Email is invalid!");
   }
+}
   var emailParts = email.split("@");
-  var username = emailParts[0];
+  var username = emailParts[0].toUpperCase();
   var domain = emailParts[1];
   alert("Username: " + username + "\nDomain: " + domain);
 }
+
 function quoteOfTheDay() {
   var quotes = [
       "I love deadlines. I love the whooshing noise they make as they go by. -Douglas Adams",
