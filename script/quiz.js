@@ -10,7 +10,7 @@ var answer = ["yellow",
 function Quiz() {
   // initialize points
   var points = 0;
-  //use a for loop to loop through each math question
+  //use a for loop to loop through each question
   for (i = 0; i < quest.length; i++) {
     //set attempts to 3
     var attempts = 3;
@@ -33,4 +33,4 @@ function Quiz() {
   } // end for
   // return the points variable
   return points;
-} // end mathQuiz function
+} // end Quiz function

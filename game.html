@@ -6,11 +6,12 @@
  -->
  <html lang="en">
  <head>
-	<title>Trivia Page</title>
+	<title>Improved Trivia Page</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/styles.css">
+    <script src="script/game.js" defer></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="script/trivia.js"></script>
+	
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">   
     <link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
@@ -24,7 +25,6 @@
 			
 			<!-- Use the header area for the website name or logo -->
 			<header>
-                
 				<div class="tab-desk">
 					<a href="C:/Users/cquin/Desktop/BeginningWebDesign/index.html"><img src="images/hero_image.jpeg" alt="red glowing keyboard" height="350" class="round"></a>
 				
@@ -40,10 +40,11 @@
 					<li><a href="index.html">Home</a></li>
                     <li><a href="quotes.html">Quotes</a></li> 
                     <li><a href="secret-number-game.html">Secret Number Game</a></li> 
-                    <li><a href="quiz.html">Quiz</a></li> 
-                    <li><a href="trivia.html">Trivia</a></li>
-					<li><a href="game.html">Trivia Game Improved</a></li>
-                </ul>
+					<li><a href="quiz.html">Quiz</a></li>
+					<li><a href="trivia.html">Trivia</a></li>
+                    <li><a href="game.html">Trivia Game Improved</a></li>
+
+				</ul>
 			</nav>
 
 			<!-- Use the nav area to add hyperlinks to other pages within the website -->
@@ -52,38 +53,28 @@
 					<li><a href="index.html">Home</a></li>
                     <li><a href="quotes.html">Quotes</a></li> 
                     <li><a href="secret-number-game.html">Secret Number Game</a></li> 
-                    <li><a href="quiz.html">Quiz</a></li>
-                    <li><a href="trivia.html">Trivia</a></li>
-					<li><a href="game.html">Trivia Game Improved</a></li>
+					<li><a href="quiz.html">Quiz</a></li>
+					<li><a href="trivia.html">Trivia</a></li>
+                    <li><a href="game.html">Trivia Game Improved</a></li>
 				</ul>
 			</nav>
 			
 			<!-- Use the main area to add the main content to the webpage -->
 			<main>
-			
-				<div>
-				<h1>Trivia Page</h1>
-				<br>
-                <script>
-                var dateTime = displayDate();
-                </script>
-                <script>
-                    var greet = greeting();
-                </script>
-                <script>
-                    var emailVal = emailValidation();
-                </script>
-                <script>
-                    var quote = quoteOfTheDay();
-                </script>
-                <script>
-				var score = Quiz();
-                // display the results on the screen
-                //document.write('Your score is ' + score);
-                </script>
-				</div>
-				
-			</main>
+            <header>
+            <h1>The Multiple Guess Game</h1>
+            </header>
+            <section>
+                <h2>Betcha can't guess the right answer!</h2>
+                <p id="question">Click the Play Game button to play our game.</p>
+                <ol id="answers"></ol>
+                <div id="prompt"></div>
+            </section>
+            <hr>
+            <footer>
+                <p>Brookhaven College CIT</p>
+            </footer>
+            </main>
 			
 			<!-- Use the footer area to add webpage footer content -->
 			<footer>
